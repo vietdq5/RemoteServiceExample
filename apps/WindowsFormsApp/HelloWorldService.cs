@@ -2,7 +2,7 @@
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Identity;
 
-namespace WPFApp
+namespace WindowsFormsApp
 {
     public class HelloWorldService : ITransientDependency
     {

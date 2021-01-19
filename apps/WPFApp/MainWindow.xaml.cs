@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using Volo.Abp.Identity;
 
@@ -10,21 +11,21 @@ namespace WPFApp
     public partial class MainWindow : Window
     {
         private readonly HelloWorldService _helloWorldService;
-        private readonly IProfileAppService _profileAppService;
 
-        public MainWindow(HelloWorldService helloWorldService, IProfileAppService profileAppService)
+
+        public MainWindow(HelloWorldService helloWorldService)
         {
             _helloWorldService = helloWorldService;
-            _profileAppService = profileAppService;
             InitializeComponent();
         }
 
-        protected override void OnContentRendered(EventArgs e)
+        protected override async void OnContentRendered(EventArgs e)
         {
             HelloLabel.Content = _helloWorldService.SayHello();
-            label1.Content = "1";
-            label2.Content = "2";
-            label3.Content = "3";
+            var demo = await _helloWorldService.GetDemadsfas();
+            label1.Content = demo.name1;
+            label2.Content = demo.name2;
+            label3.Content = demo.name3;
         }
     }
 }

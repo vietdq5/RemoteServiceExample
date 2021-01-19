@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Name="HelloLabel" FontSize="90" Margin="88,61,600,350"/>
-        <Label x:Name="label1" Content="Label" Margin="88,144,552,250"/>
-        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="88,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,-1.083"/>
-        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="88,235,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Label" Margin="386,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,-1.083"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="106,239,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,-1.083"/>
+        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="106,311,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.779,3.649" />
     </Grid>
 </Window>

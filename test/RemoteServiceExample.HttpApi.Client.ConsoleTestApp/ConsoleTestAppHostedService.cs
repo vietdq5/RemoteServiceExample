@@ -10,10 +10,7 @@ namespace RemoteServiceExample.HttpApi.Client.ConsoleTestApp
     {
         public async Task StartAsync(CancellationToken cancellationToken)
         {
-            using (var application = AbpApplicationFactory.Create<RemoteServiceExampleConsoleApiClientModule>(options =>
-            {
-                options.UseAutofac();
-            }))
+            using (var application = AbpApplicationFactory.Create<RemoteServiceExampleConsoleApiClientModule>())
             {
                 application.Initialize();
 

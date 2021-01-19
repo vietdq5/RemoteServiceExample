@@ -7,14 +7,14 @@ using Volo.Abp.Http.Client;
 using Volo.Abp.Http.Client.IdentityModel;
 using Volo.Abp.Modularity;
 
-namespace WPFApp
+namespace WindowsFormsApp
 {
     [DependsOn(
          typeof(AbpAutofacModule),
          typeof(RemoteServiceExampleHttpApiClientModule),
          typeof(AbpHttpClientIdentityModelModule)
         )]
-    public class WPFAppModule : AbpModule
+    public class WinFormModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
@@ -27,7 +27,7 @@ namespace WPFApp
                     );
                 });
             });
-            context.Services.AddSingleton<MainWindow>();
+            context.Services.AddTransient<Form1>();
         }
     }
 }
