@@ -1,6 +1,12 @@
 ﻿using RemoteServiceExample.Entities;
+using RemoteServiceExample.Entities.Dtos;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Linq;
 using System.Windows.Forms;
+using Volo.Abp.Application.Dtos;
 using Volo.Abp.DependencyInjection;
 
 namespace WindowsFormsApp
@@ -32,6 +38,17 @@ namespace WindowsFormsApp
             var book = await _bookAppService.GetAsync(guidId);
             label5.Text = book.Name;
             label7.Text = book.Price.ToString();
+        }
+
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            var input = new PagedAndSortedResultRequestDto();
+            input.SkipCount = 0;
+            input.MaxResultCount = 1000;
+            var result = await _bookAppService.GetListAsync(input);
+            var list = result.Items.ToList();
+            var dataTable = list.ToDataTable<BookDto>();
+            dataGridView1.DataSource = dataTable;
         }
     }
 }
