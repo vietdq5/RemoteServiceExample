@@ -1,0 +1,15 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="HelloLabel" FontSize="90" Margin="88,61,600,350"/>
+        <Label x:Name="label1" Content="Label" Margin="88,144,552,250"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="88,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,-1.083"/>
+        <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="88,235,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
