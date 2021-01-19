@@ -252,7 +252,4 @@ paket-files/
 *.sln.iml
 
 # RemoteServiceExample
-host/RemoteServiceExample.IdentityServer/Logs/logs.txt
-host/RemoteServiceExample.HttpApi.Host/Logs/logs.txt
-host/RemoteServiceExample.Web.Host/Logs/logs.txt
-host/RemoteServiceExample.Web.Unified/Logs/logs.txt
+host/RemoteServiceExample.Web/Logs/logs.txt
