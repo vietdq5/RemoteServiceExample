@@ -43,7 +43,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{0A37F1EC-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFApp", "apps\WPFApp\WPFApp.csproj", "{517501A4-6C71-4702-9900-082D8ED81D17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "apps\WindowsFormsApp\WindowsFormsApp.csproj", "{2ADA4FED-87F7-4600-BA50-E2A99E94150A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormsApp", "apps\WindowsFormsApp\WindowsFormsApp.csproj", "{2ADA4FED-87F7-4600-BA50-E2A99E94150A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "apps\WindowsFormsApp1\WindowsFormsApp1.csproj", "{7D34C616-1CBD-4E27-8824-77E5BD2C3134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{2ADA4FED-87F7-4600-BA50-E2A99E94150A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ADA4FED-87F7-4600-BA50-E2A99E94150A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ADA4FED-87F7-4600-BA50-E2A99E94150A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D34C616-1CBD-4E27-8824-77E5BD2C3134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D34C616-1CBD-4E27-8824-77E5BD2C3134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D34C616-1CBD-4E27-8824-77E5BD2C3134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D34C616-1CBD-4E27-8824-77E5BD2C3134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{517501A4-6C71-4702-9900-082D8ED81D17} = {0A37F1EC-C4FC-4B9F-8C4C-0D1F3CFE8470}
 		{2ADA4FED-87F7-4600-BA50-E2A99E94150A} = {0A37F1EC-C4FC-4B9F-8C4C-0D1F3CFE8470}
+		{7D34C616-1CBD-4E27-8824-77E5BD2C3134} = {0A37F1EC-C4FC-4B9F-8C4C-0D1F3CFE8470}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
